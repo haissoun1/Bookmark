@@ -1,0 +1,39 @@
+$a:#ffffff;
+
+body{
+    background-color: $a;
+}
+.top{
+    display: flex;
+
+    .Menu{
+        margin-left: 100vh;
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            width: 100%;
+            li{
+                position: relative;
+               
+                :hover {
+                    padding: 10px 20px;
+                    border: 1px solid;
+                    border-radius: 5px;
+                    color: red;  
+                }
+                :checked {
+                    color: red;  
+                }
+                
+              a{
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    
+                    
+                }
+
+            }
+        }
+    }
+}

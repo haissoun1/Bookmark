@@ -1,0 +1,56 @@
+body {
+  background-color: #ffffff;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top .Menu {
+  margin-left: 100vh;
+}
+
+.top .Menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.top .Menu ul li {
+  position: relative;
+}
+
+.top .Menu ul li :hover {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  color: red;
+}
+
+.top .Menu ul li :checked {
+  color: red;
+}
+
+.top .Menu ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.contoner .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contoner .section1 .paragraf1 {
+  margin: 10vh;
+  max-width: 53vh;
+}
+/*# sourceMappingURL=style.css.map */
