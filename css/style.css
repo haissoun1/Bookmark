@@ -1,18 +1,27 @@
 body {
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.top {
+body .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 2vw;
 }
 
-.top .Menu {
-  margin-left: 100vh;
+body .top .logo {
+  margin-left: 6vw;
 }
 
-.top .Menu ul {
+body .top .Menu {
+  margin-left: 26vw;
+  margin-top: -17px;
+}
+
+body .top .Menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,34 +32,136 @@ body {
   width: 100%;
 }
 
-.top .Menu ul li {
-  position: relative;
+@media (max-width: 600px) {
+  body .top .Menu ul {
+    position: absolute;
+    right: 0px;
+    height: 40vh;
+    top: 8vh;
+    background-color: rgba(47, 53, 79, 0.8);
+    opacity: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    z-index: 6;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  body .top .Menu ul li {
+    position: relative;
+  }
+  body .top .Menu ul li :hover {
+    padding: 1vw 1.2vw;
+    border: 1px solid;
+    border-radius: 5px;
+    color: red;
+  }
+  body .top .Menu ul li a {
+    text-decoration: none;
+    padding: 4vw 1.2vw;
+    font-size: 1.3vw;
+  }
 }
 
-.top .Menu ul li :hover {
-  padding: 10px 20px;
-  border: 1px solid;
-  border-radius: 5px;
-  color: red;
+body .top .Menu .burger {
+  display: none;
 }
 
-.top .Menu ul li :checked {
-  color: red;
+@media (max-width: 600px) {
+  body .top .Menu .burger {
+    display: block;
+    margin-left: 2vw;
+  }
 }
 
-.top .Menu ul li a {
-  text-decoration: none;
-  padding: 10px 20px;
+body .top .Menu .burger .line0 {
+  width: 25px;
+  height: 5px;
+  background-color: red;
+  margin: 5px;
+}
+
+body .top .Menu .burger .line1 {
+  width: 25px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+}
+
+body .top .Menu .burger .line2 {
+  width: 25px;
+  height: 5px;
+  background-color: red;
+  margin: 5px;
+}
+
+.contoner {
+  margin-top: 40px;
 }
 
 .contoner .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .contoner .section1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: right;
+  }
 }
 
 .contoner .section1 .paragraf1 {
-  margin: 10vh;
-  max-width: 53vh;
+  max-width: 80%;
+  margin-left: 30px;
+}
+
+@media (max-width: 600px) {
+  .contoner .section1 .paragraf1 {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.contoner .section1 .paragraf1_img {
+  z-index: 2;
+}
+
+.contoner .section1 .paragraf1_img .paragraf1_image {
+  margin-right: 0;
+}
+
+.contoner .section1 .paragraf1_img .paragraf1_image img {
+  width: 80%;
+}
+
+.contoner .section1 .paragraf1_img .background1 {
+  margin-top: -48%;
+  margin-left: 20%;
+  padding: 26% 20%;
+  background-color: #4f64d9;
+  border-radius: 40vw  0 0 40vw;
+  z-index: 0;
+}
+
+.contoner .section2 .Featur {
+  max-width: 65vw;
+  text-align: center;
+  margin: 70px auto;
 }
 /*# sourceMappingURL=style.css.map */

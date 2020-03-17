@@ -2,38 +2,94 @@ $a:#ffffff;
 
 body{
     background-color: $a;
-}
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+
 .top{
     display: flex;
-
+    margin-top: 2vw;
+    .logo{
+        margin-left: 6vw;
+    }
     .Menu{
-        margin-left: 100vh;
+        margin-left: 26vw;
+        margin-top: -17px;
+       // @media (max-width:600px) {
+        //    display: none;
+        //}
+
         ul{
             display: flex;
             list-style: none;
             justify-content: space-between;
             width: 100%;
+           @media (max-width:600px) {
+                position: absolute;  
+                right: 0px;
+                height: 40vh;
+                top: 8vh;
+                background-color: rgba($color: #2f354f, $alpha: 0.8);
+                opacity: 60%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                z-index: 6;
+                transform: translateX(100%);
+            
             li{
                 position: relative;
                
                 :hover {
-                    padding: 10px 20px;
+                    padding: 1vw 1.2vw;
                     border: 1px solid;
                     border-radius: 5px;
                     color: red;  
                 }
-                :checked {
-                    color: red;  
-                }
+               
                 
               a{
                     text-decoration: none;
-                    padding: 10px 20px;
-                    
+                    padding: 4vw 1.2vw;
+                    font-size: 1.3vw;
                     
                 }
 
             }
         }
     }
+
+    .burger{
+        display: none;
+        @media (max-width:600px) {
+            display: block;
+            margin-left: 2vw;
+        }
+
+
+        .line0  {
+        width: 25px;
+        height: 5px;
+        background-color: red;
+        margin: 5px;
+
+        }
+        .line1  {
+            width: 25px;
+            height: 5px;
+            background-color: black;
+            margin: 5px;
+            }
+            .line2  {
+                width: 25px;
+                height: 5px;
+                background-color: red;
+                margin: 5px;
+
+                }
+                
+    }
+
 }
+}}

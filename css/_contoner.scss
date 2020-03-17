@@ -1,10 +1,55 @@
+
 .contoner{
+    margin-top: 40px;
     .section1{
         display: flex;
-        .paragraf1{
-            margin: 10vh;
-                max-width: 53vh;
-            
+        justify-content: space-between;
+        @media (max-width:600px) {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: right;
+
         }
+        .paragraf1{
+            max-width: 80%;
+            margin-left: 30px;
+            @media (max-width:600px) {
+                text-align: center;
+                margin: auto;
+            }
+        }
+        
+        .paragraf1_img{
+            z-index: 2;
+            
+
+            .paragraf1_image{
+                margin-right: 0;
+
+                img{
+                    width: 80%;
+
+                }
+            }
+
+            .background1{
+                margin-top: -48%;
+                margin-left: 20%;
+                padding: 26% 20%;
+                background-color: #4f64d9;
+                border-radius: 40vw  0 0 40vw ;
+                z-index: 0;
+            } 
+        }
+    }
+
+    .section2{
+          .Featur{
+            max-width: 65vw;
+            text-align: center;  
+            margin: 70px auto;
+        }
+            
+
     }
 }
