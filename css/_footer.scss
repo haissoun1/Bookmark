@@ -1,8 +1,13 @@
+// color
+$Footer: #242946;
+
 footer{
     width: 100%;
     height: 50px;
-    background: #555555;
+    background: $Footer;
     text-align: center;  
+    justify-content: space-between;
+
     .footer{
         width: 70%;
         height: 50%;
@@ -13,11 +18,12 @@ footer{
             display: flex;
             justify-content: space-between;
             width: 50%;
-            color: white;
+            color: $white;
             margin-top: 20px;  
         }
         .footer__logo a{
-            color: white;
+            color: $white;
+            padding: 0 10px;
         }
         .footer__logo img{
             width: 100px;
@@ -28,7 +34,7 @@ footer{
             justify-content: flex-end;
             width: 30%; 
             margin-top: 20px;
-            color: white;
+            color: $white;
         }
         .footer__icon i{
             line-height: 10px;
@@ -41,7 +47,6 @@ footer{
         height: 100%;
         .footer{
             width: 20%;
-            font-size: 12px;
             margin: auto;
             flex-direction: column;
             .footer__logo{
@@ -53,10 +58,10 @@ footer{
                 margin-top: 10px;
                 margin-left: 30px;
             }
-            .footer__icone{
+            .footer__icon{
                 justify-content: center;;
                 padding: 10px ;
-                margin: auto;
+                margin-left: 30px;
 
             }
         }

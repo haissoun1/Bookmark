@@ -1,4 +1,17 @@
-$a:#ffffff;
+// color
+$navColor: #2f354f;
+$midnight: #2c3e50;
+$white: white;
+$blue: blue;
+$blue1: #4f64d9;
+$blue2: rgb(0, 110, 255);
+$black: black;
+$red: red;
+$shadow :#dbd9d994;
+$tabcolor :rgb(122, 122, 124);
+$Footer: #242946;
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
@@ -13,15 +26,15 @@ body{
     
 
 
-.top{
+.header{
     display: flex;
     margin-top: 2vw;
 
-    .logo{
+    .header_logo{
         margin-left: 6vw;
         
     }
-    .Menu-mobile{
+    .header_Menu-mobile{
         line-height: 50px;
         font-size: 24px;
         cursor: pointer;
@@ -42,7 +55,7 @@ body{
          display: none;
          position: absolute;
          width: 100%;
-         background-color: rgba($color: #2f354f, $alpha: 0.9);
+         background-color: rgba($color: $navColor, $alpha: 0.9);
          top: 40px;
          left: +100%;
          transition: 0.5s;
@@ -71,7 +84,7 @@ body{
                     padding: 1vw 1.2vw;
                     border: 1px solid;
                     border-radius: 5px;
-                    color: red;  
+                    color: $red;  
                    }
                    
 
@@ -82,7 +95,7 @@ body{
                       padding: 4vw 1.2vw;
                        font-size: 1.3vw;
                        @media (max-width:600px) {
-                        color: #ffffff;  
+                        color: $white;  
     
                     }
 
