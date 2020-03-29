@@ -1852,6 +1852,13 @@ body nav.active {
   padding: 30px 0px;
 }
 
+.contoner .broser .broser__chrom:hover img {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
 .contoner .broser .broser__chrom .broser__chrom--bg {
   padding: 30px 0;
 }
@@ -1875,7 +1882,7 @@ body nav.active {
 }
 
 .contoner .broser .broser__fire {
-  margin: 10px 0 -10px 0;
+  margin: 20px 0 -10px 0;
   width: 30%;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -1883,6 +1890,13 @@ body nav.active {
           box-shadow: 4px 8px 2px #dbd9d994;
   text-align: center;
   padding: 30px 0px 20px 0;
+}
+
+.contoner .broser .broser__fire:hover img {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .contoner .broser .broser__fire .broser__fire--bg {
@@ -1908,7 +1922,7 @@ body nav.active {
 }
 
 .contoner .broser .broser__opera {
-  margin: 20px 0 -20px 0;
+  margin: 35px 0 -20px 0;
   width: 30%;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -1916,6 +1930,13 @@ body nav.active {
           box-shadow: 4px 8px 2px #dbd9d994;
   text-align: center;
   padding: 30px 0px;
+}
+
+.contoner .broser .broser__opera:hover img {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
 }
 
 .contoner .broser .broser__opera .broser__opera--bg {
